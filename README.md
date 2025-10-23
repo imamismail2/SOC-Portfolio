@@ -4,6 +4,17 @@ This repository showcases hands-on cybersecurity projects aligned with the **Com
 
 ## 📁 Project Index
 1. **SIEM Dashboards** – Splunk log analysis and alerting
+   # Splunk Brute Force Detection Dashboard
+
+## 🎯 Objective
+Build a Splunk dashboard to detect repeated failed login attempts and alert on brute force patterns.
+
+## 🧰 Tools Used
+- Splunk Enterprise Free
+- Sample Windows Event Logs
+
+## 🔎 Key Queries
+
 2. **Vulnerability Management** – Vulnerability scans and risk prioritization
 3. **Incident Response Labs** – Phishing and network forensics analysis
 4. **Threat Intelligence** – MITRE ATT&CK mapping and adversary research
@@ -23,6 +34,6 @@ Each folder contains:
 ---
 
 ### Author
-*Your Name*  
-[LinkedIn](#) | [Email](#)
+Ismail Imam  
+[LinkedIn](#) | [ismail.imam1012@gmail.com](#)
 
