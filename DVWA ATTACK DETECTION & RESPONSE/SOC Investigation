@@ -1,1 +1,40 @@
 
+Attack Timeline:
+
+Path Windows:
+Steps and conmands:
+
+1 - Identify the attack timeline in Apache logs
+         notepad C:\xampp\apache\logs\access.log
+    Filter for attacker IP
+       findstr "10.10.10." C:\xampp\apache\logs\access.log
+
+
+Find IOCs
+Repeated Requests to:
+      /dvwa/vulnerabilities/sqli/
+
+      /login.php
+
+     /security.php
+
+High request frequency
+
+Encoded payloads (%27, %23, %3D)
+
+SOC finding: Clear malicious pattern consistent with SQL injection automation.
+
+
+2 - Filter for SQL keywords:
+
+findstr /i "union select or 1=1" C:\xampp\apache\logs\access.log
+
+
+
+Typical log entry:
+
+GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+user,password+FROM+users%23 HTTP/1.1
+
+
+
+
